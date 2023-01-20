@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kettles</title>
-</head>
-<body>
-    <header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <div class="page-header">
-            <div class="logo">
-                <a class="logo__link" href="">
-                    <svg>
-                        <use href=".//img/Smeg_svg.svg"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="menu">
-                <ul class="menu__list">
-                    <li>PRODUCTS</li>
-                    <li>AESTHETIC LINES</li>
-                    <li>INSPIRATION</li>
-                </ul>
-            </div>
-            <div class="cabinet">
-                <ul>
-                    <li>
-                        <svg>
-                            <use href="./img/magnifying-glass 1.svg"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./img/user 1.svg"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./img/shopping-cart 1.svg"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
+          <div class="page-header__logo">
+            <a class="page-header__logo-pic" href="./index.html"> </a>
+          </div>
+          <div>
+            <ul class="page-header__menu">
+              <li class="page-header__menu-item">PRODUCTS</li>
+              <li class="page-header__menu-item">AESTHETIC LINES</li>
+              <li class="page-header__menu-item">INSPIRATION</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="page-header__cabinet">
+              <li class="page-header__search">
+                <a href=""><img src="./img/magnifying-glass 1.svg" alt="" /></a>
+              </li>
+              <li class="page-header__user">
+                <a href=""><img src="./img/user 1.svg" alt="" /></a>
+              </li>
+              <li class="page-header__shop">
+                <a href=""><img src="./img/shopping-cart 1.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <main>
-        <div>
-            <div>
-                <h1>Kettles</h1>
-                <p>The variable temperature kettle has been created for real tea lovers, where precision of temperature is so important.</p>
+      </header>
+      <main>
+        <div class="main">
+          <div class="main__content">
+            <div class="main__text">
+              <h1 class="main__header">Kettles</h1>
+              <p class="main__description">
+                The variable temperature kettle has been created for real tea
+                lovers, where precision of temperature is so important.
+              </p>
             </div>
-            <div>
-                <button>Shop Now</button>
-                <button>watch Video</button>
+            <div class="buttons">
+              <button class="buttons__shop">Shop Now</button>
+              <button class="buttons__play">PLAY</button
+              ><span class="buttons__text">Watch Video</span>
             </div>
-            <div>
-               <div><img src="./img/kettle_blue.png" alt="blue kettle"></div>
-               <div><img src="./img/kettle_red.png" alt="red kettle"></div>
-               <div><img src="./img/kettle_pink.png" alt="pink kettle"></div>
-               <div><img src="./img/kettle_bigie.png" alt="beige kettle"></div>
+            <div class="main__kettles">
+              <div class="main__kettle kettle--blue"></div>
+              <div class="main__kettle kettle--red"></div>
+              <div class="main__kettle kettle--pink"></div>
+              <div class="main__kettle kettle--biege"></div>
             </div>
+          </div>
+          <div class="main__image-thumb">
+            <div class="main__image">
+              <img src="./img/Smeg 1.png" alt="Big kettle blue" />
+            </div>
+          </div>
+          <div class="main__kettles-switch">
+            <a href="">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="4.5" stroke="white" />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="4.5" stroke="white" />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="4.5" stroke="white" />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="4.5" stroke="white" />
+              </svg>
+            </a>
+          </div>
         </div>
-    </main>
-    
-</body>
+      </main>
+    </div>
+  </body>
 </html>
