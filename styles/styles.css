@@ -84,6 +84,14 @@ video {
     margin: 0;
     padding: 0;
 }
+.header-container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    border: 1px solid #95CFD5;
+}
 .container{
     width: 100%;
     max-width: 1440px;
@@ -108,10 +116,15 @@ a{
     text-decoration: none;
 }
 .page-header{
-    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #000000;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
 }
 .page-header__logo-pic::after{
     content: '';
@@ -122,18 +135,22 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.page-header__menu{
-    display: flex;
-    justify-content: space-between;
+
+.page-header__menu-item{
+    display: inline-block;
 }
-.page-header__cabinet{
-    display: flex;
-    justify-content: space-between;
+.page-header__menu-item:not(:last-child){
+    margin-right: 100px;
+}
+.page-header__cabinet > li{
+    display: inline-block;
+    margin-left: 20px;
 }
 /* Main */
 .main{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 .main__content{
@@ -143,8 +160,6 @@ a{
     font-weight: 700;
     font-size: 150px;
     line-height: 150px;
-
-    margin-top: 190px;
 }
 .main__description{
     line-height: 24px;
@@ -152,8 +167,41 @@ a{
     margin-top: 10px;
 }
 .buttons{
+    display: flex;
+    justify-content: flex-start;
     margin-top: 30px;
 }
+.buttons div:last-child{
+    display: flex;
+    align-items: center;
+}
+.buttons__shop {
+    padding: 16px 100px;
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 45px;
+}
+
+.buttons__play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid #000000; */
+    background-image: url(../img/Play_video.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.buttons__text {
+    margin-left: 10px;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #000000;
+}
+
 .main__kettles{
     display: flex;
     justify-content: flex-start;
@@ -165,49 +213,30 @@ a{
     width: 80px;
     height: 80px;
     border: 1px solid #fff;
+    border-radius: 10px;
+}
+.kettle--background{
+    background-size: 53px;
 }
 .kettle--blue {
     background-image: url(../img/kettle_blue.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: no-repeat; 
     background-position: center;
 }
 .kettle--red{
     background-image: url(../img/kettle_red.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
 }
 .kettle--pink {
     background-image: url(../img/kettle_pink.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
 }
 .kettle--biege {
     background-image: url(../img/kettle_begie.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
-}
-.buttons__shop{
-    padding: 16px 100px;
-    background-color: #000000;
-    color: white;
-    text-transform: uppercase;
-    margin-right: 45px  ;
-}
-.buttons__play{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid #000000;
-}
-.buttons__text{
-    margin-left: 10px;
-    text-transform: uppercase;
-    line-height: 24px;
-    color: #000000;
 }
 
 .main__image-thumb{
@@ -215,7 +244,7 @@ a{
 }
 .main__image{
     width: 440px;
-    margin-top: 130px;
+    margin: 65px 0px;
 }
 .main__kettles-switch{
     display: flex;
