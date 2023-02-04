@@ -97,7 +97,6 @@ video {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 5%;
-    background-color: #95CFD5;
 }
 body{
     font-family: 'Poppins';
@@ -122,47 +121,79 @@ a{
     justify-content: space-between;
 
     color: #000000;
-}
-.menu__button { 
-    background-color: #fff;
-    border: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-}
-.menu__list{
-    display: none;
-    /* display: flex; */
-    justify-content: space-between;
-    max-width: 1070px;
-    height: 370px;
-
-    position: absolute;
-}
-.menu__item:hover .menu__list {
-    display: block;
-}
-.page-header__logo-pic::after{
+} 
+.page-header__logo-pic::after {
     content: '';
-    display: inline-block;    
+    display: inline-block;
     width: 105px;
     height: 20px;
     background-image: url(../img/Smeg_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.menu__item{
-    display: inline-block;
-}
-.menu__item:not(:last-child){
-    margin-right: 100px;
-}
-.page-header__cabinet > li{
+.page-header__cabinet>li {
     display: inline-block;
     margin-left: 20px;
 }
+.menu__button { 
+    background-color: #fff;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+
+    cursor: pointer;
+}
+
+.menu__item {
+    display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 100px;
+}
+.menu{
+    position: relative;
+}
+/* Submenu settings */
+.submenu{
+    display: none;
+}
+.submenu--visible {
+    width: 860px;
+    height: 380px;
+
+    position: absolute;
+    top: 55px;
+    left: -100px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(255, 255, 255, .9);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.list--inline-block{
+    display: inline-block;
+}
+.list--inline-block:first-of-type{
+    margin-right: 4rem;
+}
+.submenu__heading{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0px;
+}
+.submenu__list li{
+    margin-bottom: 15px;
+}
+
 /* Main */
 .main{
     display: flex;
@@ -170,6 +201,20 @@ a{
     align-items: center;
 
 }
+/* Change background color */
+.main--backgroundBlue{
+    background-color: #95CFD5;
+}
+.main--backgroundRed{
+    background-color: #C42129;
+}
+.main--backgroundPink{
+    background-color: #E0ADC5;
+}
+.main--backgroundBegie{
+    background-color: #F5C7B3;
+}
+
 .main__content{
     width: 50%;
 }
@@ -196,7 +241,7 @@ a{
 .buttons__shop {
     padding: 16px 100px;
     background-color: #000000;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     margin-right: 45px;
 }
@@ -204,7 +249,7 @@ a{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    /* border: 1px solid #000000; */
+    border: 1px solid #000000;
     background-image: url(../img/Play_video.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -266,4 +311,13 @@ a{
 .main__kettles-switch{
     display: flex;
     flex-direction: column;
+}
+.switch__btn{
+    width: 10px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
