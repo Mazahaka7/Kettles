@@ -20,7 +20,8 @@ function colorBlue() {
         mainPageColor.classList.remove('main--backgroundRed');
         mainPageColor.classList.remove('main--backgroundBegie');
         mainPageColor.classList.add('main--backgroundBlue');
-    }
+     }
+    document.getElementById("main__img").src ="./img/Smeg 1.png"
 } 
 btnColorRed.addEventListener('click', colorRed);
 function colorRed() {
@@ -30,16 +31,8 @@ function colorRed() {
         mainPageColor.classList.remove('main--backgroundBegie')
         mainPageColor.classList.add('main--backgroundRed');
     }
+    document.getElementById("main__img").src ="./img/Smeg 2.png"
 }
-btnColorBegie.addEventListener('click', colorBegie);
-function colorBegie() {
-    if (colorBlue || colorPink || colorRed) {
-        mainPageColor.classList.remove('main--backgroundBlue');
-        mainPageColor.classList.remove('main--backgroundRed');
-        mainPageColor.classList.remove('main--backgroundPink');
-        mainPageColor.classList.add('main--backgroundBegie');
-    }
-}   
 btnColorPink.addEventListener('click', colorPink);
 function colorPink() {
     if (colorBlue || colorBegie || colorRed) {
@@ -48,4 +41,15 @@ function colorPink() {
         mainPageColor.classList.remove('main--backgroundBegie')
         mainPageColor.classList.add('main--backgroundPink');
     }
+    document.getElementById("main__img").src ="./img/Smeg 3.png"
 } 
+btnColorBegie.addEventListener('click', colorBegie);
+function colorBegie() {
+    if (colorBlue || colorPink || colorRed) {
+        mainPageColor.classList.remove('main--backgroundBlue');
+        mainPageColor.classList.remove('main--backgroundRed');
+        mainPageColor.classList.remove('main--backgroundPink');
+        mainPageColor.classList.add('main--backgroundBegie');
+    }
+    document.getElementById("main__img").src ="./img/Smeg 4.png"
+}
