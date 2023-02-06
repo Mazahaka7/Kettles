@@ -276,10 +276,12 @@ a{
     height: 80px;
     border: 1px solid #fff;
     border-radius: 10px;
-}
-.kettle--background{
     background-size: 53px;
 }
+.kettle--background{
+    background-color: #fff;
+}
+
 .kettle--blue {
     background-image: url(../img/kettle_blue.png);
     background-repeat: no-repeat; 
