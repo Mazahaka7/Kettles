@@ -193,7 +193,10 @@ a{
 .submenu__list li{
     margin-bottom: 15px;
 }
-
+.submenu__list li:hover{
+    text-decoration: underline;
+    cursor: default;
+}
 /* Main */
 .main{
     display: flex;
@@ -244,6 +247,15 @@ a{
     color: #fff;
     text-transform: uppercase;
     margin-right: 45px;
+    border-radius: 6px;
+}
+.buttons__shop:hover,
+.buttons__shop:focus{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000000;
+    border-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .buttons__play {
     width: 50px;
@@ -254,7 +266,12 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
+}
+.buttons__play:hover,
+.buttons__play:focus{
+    background-image: url(../img/Play_video_active.svg);
+    border: 1px solid #000000;
+    outline-width: 0;
 }
 
 .buttons__text {
