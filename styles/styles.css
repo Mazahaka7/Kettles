@@ -90,7 +90,6 @@ video {
     margin: 0 auto;
     padding: 20px 40px;
     background-color: #fff;
-    border: 1px solid #95CFD5;
 }
 .container{
     width: 100%;
@@ -339,4 +338,54 @@ a{
     border-radius: 50%;
     margin-bottom: 5px;
     cursor: pointer;
+}
+@media screen and (min-width:375px) and (max-width:420px) {
+    .header-container{
+        width: 100%;
+        max-width: 420px;
+    }
+    .container{
+        width: 100%;
+        max-width: 420px;
+    }
+    .main{
+        display: block;
+        padding-top: 25px;
+    }  
+    .page-header__burger{
+        display: none;
+    }
+    .main__header{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .main__kettles{
+        display: none;
+    }
+    .main__content {
+        text-align: center;
+        width: 100%;
+    }
+    .main__image-thumb {
+        width: 100%;
+    }
+    .main__image {
+        width: 290px;
+        margin: 25px auto;
+    }
+    .main__kettles-switch {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .main__kettles-switch:not(:last-child){
+        margin-right: 15px;
+    }
+    .buttons__shop{
+        padding: 15px 80px;
+        margin-right: 20px;
+    }
+    .buttons__text{
+        display: none;
+    }
 }
