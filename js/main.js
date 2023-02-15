@@ -105,3 +105,10 @@ function changeBackgroundColor() {
 };
     this.classList.add('kettle--background');
 }   
+//mobile iteractive
+const mobileMenu = document.querySelector('.page-header__burger');
+const mobileMenuBtn = document.querySelector('.mobile-menu_btn');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle("menu--mobile-version");
+})
